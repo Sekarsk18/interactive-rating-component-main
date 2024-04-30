@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass" ,serif;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body{
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+}
+
+.wrapper {
+    max-width: 380px;
+    background-color: var(--DarkBlue);
+    border-radius: 30px;
+}
+
+.Main-page {
+    padding: 2rem;
+}
+
+.starlogo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: rgba(60, 65, 71, 0.418);
+    margin-bottom: 1.5rem;
+}
+
+span {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--MediumGrey);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.btn-container button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(60, 65, 71, 0.418);
+    color: var(--MediumGrey);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn-container button:hover {
+    background-color: var(--Orange);
+    color: white;
+}
+
+.btn-container button:focus {
+    background-color: var(--MediumGrey);
+    color: white;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--Orange);
+    color: var(--White);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn-submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+/* Response page */
+
+.Response-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.8rem;
+}
+
+.Response-page img{
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+.Response-page .ratings {
+    background-color: rgba(60, 65, 71, 0.418);
+    color: var(--Orange);
+    font-size: .8rem;
+    padding: .3rem 1rem;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.ratings span {
+    font-size: .8rem;
+}
+
+.Response-page h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.Response-page p {
+    text-align: center;
+}
+
+.btn-rate {
+    width: 80%;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--Orange);
+    color: var(--White);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn-rate:hover {
+    background-color: var(--White);
+   color: var(--Orange);
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width:425px){
+    .wrapper{
+        max-width: 320px;
+    }
+    .Main-page {
+        padding: 1.5rem;
+    }
+
+    p {
+        font-size: .85rem;
+    }
+
+    .btn-container button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .9rem;
+    }
+}
